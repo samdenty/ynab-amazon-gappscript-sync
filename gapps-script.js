@@ -1,5 +1,5 @@
 const TOKEN = 'INSERT_YNAB_TOKEN';
-const BUDGET_ID = 'INSERT_YNAB_BUDGET_ID;
+const BUDGET_ID = 'INSERT_YNAB_BUDGET_ID';
 
 function parseAmazonEmails() {
   const { transactions } = call_ynab_api('get', `/budgets/${BUDGET_ID}/transactions`) || {};
